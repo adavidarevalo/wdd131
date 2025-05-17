@@ -1,4 +1,4 @@
-/* Styles for Temple Album page */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
 }
 
-/* Header styles */
+
 header {
     background-color: #330066;
     color: white;
@@ -33,7 +33,7 @@ header {
     width: 170px;
 }
 
-/* Hamburger menu - hidden by default on larger screens */
+
 .hamburger-menu {
     display: none;
     cursor: pointer;
@@ -55,7 +55,7 @@ header {
     display: none;
 }
 
-/* Navigation */
+
 nav {
     width: 100%;
     margin-top: 0.5rem;
@@ -80,7 +80,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content */
+
 main {
     padding: 1rem;
 }
@@ -93,7 +93,7 @@ h1 {
     font-weight: normal;
 }
 
-/* Temple grid */
+
 .temple-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -121,7 +121,7 @@ figcaption {
     font-size: 0.9rem;
 }
 
-/* Footer styles */
+
 footer {
     background-color: #330066;
     color: white;
@@ -135,9 +135,9 @@ footer p {
     margin: 0.25rem 0;
 }
 
-/* Mobile styles for smaller screens */
+
 @media screen and (max-width: 767px) {
-    /* Show hamburger menu on mobile */
+    
     .hamburger-menu {
         display: block;
     }
@@ -153,12 +153,12 @@ footer p {
         align-items: center;
     }
     
-    /* Hide navigation by default on mobile */
+    
     nav {
         display: none;
     }
     
-    /* Show navigation when open class is added */
+    
     nav.open {
         display: block;
     }
@@ -173,7 +173,7 @@ footer p {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
     }
     
-    /* Change temple grid to single column on mobile */
+    
     .temple-grid {
         grid-template-columns: 1fr;
     }
