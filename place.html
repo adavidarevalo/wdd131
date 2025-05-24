@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Ecuador - A vibrant country with rich natural and cultural heritage">
+    <title>Ecuador - Middle of the World</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ecuador</h1>
+        <p>Middle of the World</p>
+    </header>
+    
+    <main>
+        <!-- Hero Section with responsive images -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/ecuador-large.webp" media="(min-width: 800px)">
+                <img src="images/ecuador-small.webp" alt="Beautiful scenery of Ecuador" width="100%" height="auto">
+            </picture>
+        </section>
+
+        <div class="content-wrapper">
+            <!-- Overview Section -->
+            <section class="overview">
+                <h2>Overview</h2>
+                <p>Ecuador is a country in northwestern South America, bordered by Colombia on the north, Peru on the east and south, and the Pacific Ocean on the west. Ecuador also includes the Galápagos Islands in the Pacific, about 1,000 kilometers (620 miles) west of the mainland. The country straddles the equator, from which it takes its name, and has an area of 283,561 square kilometers (109,484 sq mi).</p>
+                <p>Ecuador is one of the most environmentally diverse countries in the world and it has contributed notably to the environmental sciences. The country has a developing economy that is highly dependent on commodities, namely petroleum and agricultural products. It is known for its rich biodiversity, numerous endemic species, and the Galápagos Islands, which were studied by Charles Darwin and inspired his theory of evolution.</p>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather">
+                <div class="weather-header">
+                    <h2>Weather</h2>
+                </div>
+                <div class="weather-info">
+                    <div class="weather-icon">
+                        <img src="images/weather-icon.svg" alt="Weather icon" class="mobile-icon">
+                    </div>
+                    <div class="weather-data">
+                        <p>Current Temperature: <span id="temperature">8</span>°C</p>
+                        <p>Wind Speed: <span id="wind-speed">8</span> km/h</p>
+                        <p>Wind Chill: <span id="wind-chill">Calculating...</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Facts Section -->
+            <section class="facts">
+                <h2>Interesting Facts</h2>
+                <ul>
+                    <li>Ecuador is one of only two countries in South America that does not share a border with Brazil.</li>
+                    <li>The Galápagos Islands are home to unique species that inspired Charles Darwin's theory of evolution.</li>
+                    <li>Ecuador is the world's largest exporter of bananas.</li>
+                    <li>It is named after the equator, which runs through the country.</li>
+                    <li>The official currency of Ecuador is the U.S. dollar, adopted in 2000.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Last Updated: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
