@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Ecuador's must-visit attractions and tourist destinations">
+    <title>Ecuador Attractions - Experience Beauty and Culture</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/attractions.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Ecuador</h1>
+            <p>Middle of the World</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="place.html">Home</a></li>
+                <li><a href="attractions.html" class="active">Attractions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero Section with responsive images -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/ecuador-large.webp" media="(min-width: 800px)">
+                <img src="images/ecuador-small.webp" alt="Beautiful scenery of Ecuador" width="100%" height="auto">
+            </picture>
+        </section>
+
+        <div class="content-wrapper">
+            <h2 class="page-title">Top Attractions in Ecuador</h2>
+            
+            <div class="filter-container">
+                <label for="attraction-filter">Filter by region:</label>
+                <select id="attraction-filter">
+                    <option value="all">All Regions</option>
+                    <option value="galapagos">Galápagos</option>
+                    <option value="coast">Coastal</option>
+                    <option value="andes">Andes Mountains</option>
+                    <option value="amazon">Amazon Rainforest</option>
+                </select>
+            </div>
+
+            <div class="attractions-container" id="attractions-list">
+                <!-- Attractions will be loaded from JavaScript using responsive images -->
+            </div>
+
+            <section class="favorite-attractions">
+                <h2>Your Favorite Attractions</h2>
+                <p>Select your favorite attractions above to add them to your wishlist!</p>
+                <div id="favorites-list">
+                    <p id="no-favorites">No favorites selected yet.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Last Updated: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
