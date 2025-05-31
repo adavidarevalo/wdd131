@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #330066;
+    color: white;
+    padding: 1rem;
+    display: flex;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.header-content span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 186px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    width: 20px;
+}
+
+.hamburger-icon,
+.close-icon {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.hamburger-icon {
+    display: block;
+}
+
+.close-icon {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.temple-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.temple-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+.temple-info {
+    padding: 1rem;
+}
+
+.temple-info h2 {
+    color: #330066;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.temple-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    color: #555;
+}
+
+footer {
+    background-color: #330066;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
+@media screen and (max-width: 767px) {
+    .hamburger-menu {
+        display: block;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+    
+    .header-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    nav.open {
+        display: block;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding-right: 0;
+    }
+    
+    nav a {
+        padding: 0.75rem 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .temple-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
