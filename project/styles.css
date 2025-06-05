@@ -1,0 +1,286 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Source+Code+Pro&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-gray: #34495e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    background-color: var(--light-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5em;
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--primary-color);
+    margin: 1rem 0 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+p, li {
+    margin-bottom: 1rem;
+}
+
+.code-example {
+    font-family: 'Source Code Pro', monospace;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Layout */
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+section {
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Schema Section */
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.color-sample {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.primary-color {
+    background-color: var(--primary-color);
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+}
+
+.accent-color {
+    background-color: var(--accent-color);
+}
+
+.light-color {
+    background-color: var(--light-color);
+    color: var(--dark-gray);
+    border: 1px solid #ddd;
+}
+
+/* Typography Section */
+.font-example {
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.heading-font h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+.body-font p:last-child {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.code-font p:last-child {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Wireframe Section */
+.wireframe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .wireframe-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .wireframe {
+        width: 48%;
+    }
+}
+
+.wireframe h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.wireframe-sketch {
+    border: 2px solid var(--dark-gray);
+    padding: 10px;
+    background-color: #f8f9fa;
+    height: 500px;
+    position: relative;
+}
+
+.wireframe-sketch div {
+    background-color: #ddd;
+    border: 1px solid #999;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Mobile Wireframe */
+.mobile .header {
+    height: 50px;
+}
+
+.mobile .nav {
+    height: 40px;
+}
+
+.mobile .hero {
+    height: 120px;
+}
+
+.mobile .content-block {
+    height: 80px;
+}
+
+.mobile .cta {
+    height: 60px;
+    background-color: rgba(231, 76, 60, 0.3);
+}
+
+.mobile .footer {
+    height: 40px;
+}
+
+/* Desktop Wireframe */
+.desktop .header-nav {
+    height: 60px;
+    display: flex;
+}
+
+.desktop .logo {
+    width: 20%;
+    height: 58px;
+}
+
+.desktop .nav-items {
+    width: 80%;
+    height: 58px;
+}
+
+.desktop .hero {
+    height: 150px;
+}
+
+.desktop .three-column {
+    display: flex;
+    height: 100px;
+    gap: 10px;
+}
+
+.desktop .column {
+    flex: 1;
+    height: 100px;
+}
+
+.desktop .two-column {
+    display: flex;
+    height: 120px;
+    gap: 10px;
+}
+
+.desktop .main-content {
+    width: 70%;
+    height: 120px;
+}
+
+.desktop .sidebar {
+    width: 30%;
+    height: 120px;
+}
+
+.desktop .cta {
+    height: 80px;
+    background-color: rgba(231, 76, 60, 0.3);
+}
+
+.desktop .footer {
+    height: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+    
+    .color-sample {
+        width: 100%;
+    }
+}
