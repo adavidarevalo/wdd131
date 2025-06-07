@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+      <section class="confirmation">
+        <p>Your product review has been submitted successfully.</p>
+        <p>You have submitted <span id="reviewCount">0</span> review(s).</p>
+        <a href="form.html">Submit another review</a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 | Product Review | WDD 131</p>
+    </footer>
+    <script>
+      // Increment and display the review counter using localStorage
+      const countKey = "reviewCount";
+      let count = Number(localStorage.getItem(countKey)) || 0;
+      count++;
+      localStorage.setItem(countKey, count);
+      document.getElementById("reviewCount").textContent = count;
+    </script>
+  </body>
+</html>
