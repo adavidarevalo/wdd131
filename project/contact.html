@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVision Academy | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo">TechVision Academy</a>
+        <button id="hamburger" class="hamburger" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="navLinks" class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="contact.html">Contact</a>
+            <a href="references.html">References</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">🌓</button>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <p>Have questions? Send us a message.</p>
+            <form id="contactForm" class="contact-form" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="cta-button">Send</button>
+            </form>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> TechVision Academy | <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
